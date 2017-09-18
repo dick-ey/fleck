@@ -1,0 +1,19 @@
+// include another .scss file from a sub-directory
+// @import './about/about.scss';
+@import './variables.scss';
+@import './grid.scss';
+
+.row {
+	min-height: 400px;
+
+	div{
+			background: lightgrey;
+			height: 200px;
+			width:200px;
+			box-sizing: border-box;
+			border:solid 2px black;
+			border-radius:10px;
+			padding: 1em;
+	}
+
+}

@@ -1,0 +1,82 @@
+.row,
+.rows {
+  display: flex;
+  flex-direction: row; }
+
+.col,
+.columns {
+  display: block;
+  display: flex;
+  flex-direction: column; }
+
+.reverse {
+  flex-direction: row-reverse; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+.center {
+  margin: 0 auto;
+  justify-content: center; }
+
+.start {
+  justify-content: flex-start; }
+
+.end {
+  justify-content: flex-end; }
+
+.around {
+  justify-content: space-around; }
+
+.between {
+  justify-content: space-between; }
+
+.dead-center {
+  justify-content: center;
+  align-items: center; }
+
+.middle {
+  align-items: center; }
+
+.top-left {
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.top-mid {
+  justify-content: center;
+  align-items: flex-start; }
+
+.top-right {
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+.mid-left {
+  justify-content: flex-start;
+  align-items: center; }
+
+.mid-right {
+  justify-content: flex-end;
+  align-items: center; }
+
+.bottom-left {
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.bottom-mid {
+  justify-content: center;
+  align-items: flex-end; }
+
+.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.row {
+  min-height: 400px; }
+  .row div {
+    background: lightgrey;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 1em; }
