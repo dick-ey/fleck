@@ -1,0 +1,28 @@
+{
+  "name": "fleck-css",
+  "version": "0.1.0",
+  "description": "the tiniest css library to create responsive grids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dick-ey/fleck.git"
+  },
+  "keywords": [
+    "css",
+    "library",
+    "scss",
+    "sass",
+    "flexbox",
+    "grid",
+    "responsive"
+  ],
+  "author": "Matt Dickey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dick-ey/fleck/issues"
+  },
+  "homepage": "https://github.com/dick-ey/fleck#readme"
+}
