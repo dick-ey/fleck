@@ -1,5 +1,7 @@
+
 .row,
 .rows {
+  display: inline-block;
   display: flex;
   flex-direction: row;
 }
@@ -19,12 +21,14 @@
   flex-wrap: wrap;
 }
 
+.no-wrap{
+  flex-wrap: nowrap;
+}
+
 .center {
   margin: 0 auto;
   justify-content: center;
 }
-
-
 
 .start {
   justify-content: flex-start;
@@ -90,4 +94,33 @@
 .bottom-right {
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.stack-mobile{
+  @media screen and (max-width: $mobilePlus){
+    flex-direction: column;
+  }
+}
+
+.center-mobile{
+  @media screen and (max-width: $mobilePlus){
+    justify-content: center;
+  }
+}
+
+.stack-tablet{
+    @media screen and (max-width: $tablet){
+      flex-direction: column;
+    }
+}
+
+.grid-2x2 {
+  background:red;
+  width:50%;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
