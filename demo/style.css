@@ -1,0 +1,120 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: whitesmoke;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  width: 50%;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background: lightblue;
+}
+
+.logo {
+  flex: 1;
+}
+
+header {
+  height: 500px;
+  background: teal;
+  background: linear-gradient(135deg, #b2ffb5 0%,#e3f5ab 33%,#32e8f2 100%);
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.button {
+  background: red;
+  color: white;
+  padding: .5em 1em;
+  text-decoration: none;
+  margin: 0 1em;
+  border: solid 1px whitesmoke;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  border: solid 1px black;
+  background: white;
+  padding-top: 1.5em;
+}
+
+.container::before, .child::before {
+  display: block;
+  position: absolute;
+  font-family: monospace;
+  left:0;
+  content: "";
+  margin-top: -.5em;
+  margin-left: .5em;
+  padding: .5em .75em;
+  border: solid 1px;
+  border-radius: .5em;
+  
+}
+
+.container::before {
+  background: lightblue;
+  margin-top: -3em;
+  content: "container";
+  position: absolute;
+  top: 2.15em;
+  
+}
+
+.child::before {
+  content: "child";
+  background: hsl(50, 100%, 70%);
+}
+
+.window {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.block {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: grey;
+  box-sizing: border-box;
+  border: solid 1px white;
+}
+
+code {
+  font-family: "Input Mono", "Inconsolata", "Source Pro", monospace;
+  font-size: .85em;
+  box-sizing: border-box;
+  background: #333;
+  color: whitesmoke;
+  width: 100%;
+  margin-bottom: 1.5em;
+  line-height: 1.4em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.comment{
+  color:grey;
+}
+
+pre {
+  font-family: inherit;
+  font-size: inherit;
+  white-space: pre-line;
+}
